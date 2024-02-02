@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+
+    <header class="container p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container ps-3 pe-3">
+                <a href="Index.html" class="logo-link "><img src="image/Clementina_logo.avif" alt="Clementina_logo"
+                        class="logo-navbar"></a>
+                <div class="icon-navbar ms-5 ms-md-5">
+                    <a href="#"><i class="bi bi-person person-margin"></i></a>
+                    <a href="#"><i class="bi bi-bag"></i></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="Product.html">COMPLEMENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIFTBOXES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                FLORES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">ROSAS</a></li>
+                                <li><a class="dropdown-item" href="#">TULIPANES</a></li>
+                                <li><a class="dropdown-item" href="#">BOX FLOWERS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--BREADCRUMB-->
+    <div class="ml-4">
+        <nav aria-label="breadcrumb" class="ml-4">
+            <ol class="breadcrumb ml-4">
+                <li class="breadcrumb-item item-page"><a href="Index.html">PRINCIPAL</a></li>
+                <li class="breadcrumb-item active" aria-current="page">COMPLEMENTOS</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:99999999">
+
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header justify-content-between">
+                <img src="image/Clementina_logo.avif" class="rounded me-2 w-25" alt="logo">
+                <!-- <strong class="me-auto">Clementina</strong> -->
+                <div class="align-items-center">
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+
+            </div>
+            <div class="toast-body">
+                Ofertas de última temporada.
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--PRODUCT DETAIL-->
+    <div class="container mb-5 mt-5">
+        <div class="row flex-nowrap">
+            <img src="image/Flower4.webp" alt="Flower" class="img-fluid col-lg-6">
+            <div class="info ml-5 col-lg-6 p-lg-5 gap-5">
+                <div class="title ml-4 ">
+                    <h3>Ramo tulipanes azules y pompitos amarillos</h3>
+                    <h6> <span class="badge badge-secondary text-white">DE TEMPORADA</span></h6>
+                    <div class="row">
+                        <div class="col d-flex align-items-baseline gap-2">
+                            <h4 class="price">S/ 89.00</h4>
+                            <h6 class="price-cross">S/120.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <p class="m-0">
+                        Ramo con 7 tulipanes azules, pompos amarillos, eucalipto y mirra.
+                    </p>
+                </div>
+                <div class="stock d-flex gap-2">
+                    <i class="bi bi-truck"></i>
+                    <p class="m-0">Envío gratis</p>
+
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Producto orgánico sostenible
+                </div>
+                <div class="btn-section gap-lg-3 align-items-center p-0">
+                    <div class="counter">
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-dash-lg"></i>
+                        </button>
+                        <span>1</span>
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div class="add-cart">
+                        <a href="#" class="btn btn-primary mt-0"><i class="bi bi-cart cart-margin"></i>Agregar al
+                            carrito
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--PRODUCTS-->
+    <section class="container-fluid products align-content-center ">
+        <h3 class="text-center mt-4">Nuevos Productos</h3>
+        <div class="row  justify-content-center align-items-center ">
+            <div class="card mt-4 pr-4 col-sm-6 col-xs-12" style="max-width: 18rem; ">
+                <a href="Product.html"><img src="image/Flower4.webp" class="card-img-top" alt="flower"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Ramo tulipanes azules y pompitos amarillos</h5>
+                    <p class="card-text">S/ 89.00</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="Product.html" class="btn btn-primary"><i class="bi bi-cart cart-margin"></i>Agregar al
+                            carrito
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 col-sm-6 col-xs-12" style="max-width: 18rem;">
+                <a href="Product.html"><img src="image/Flower5.webp" class="card-img-top" alt="flower"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Arreglo Cerámica con Tulipanes</h5>
+                    <p class="card-text">S/ 169.00.</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="Product.html" class="btn btn-primary"><i class="bi bi-cart cart-margin"></i>Agregar al
+                            carrito
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 col-sm-6 col-xs-12" style="max-width: 18rem;">
+                <a href="Product.html"><img src="image/Flower6.webp" class="card-img-top" alt="flower"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Arreglo Girasoles Primavera</h5>
+                    <p class="card-text">S/ 149.00.</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="Product.html" class="btn btn-primary"><i class="bi bi-cart cart-margin"></i>Agregar al
+                            carrito
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 col-sm-6 col-xs-12" style="max-width: 18rem;">
+                <a href="Product.html"><img src="image/Flower7.webp" class="card-img-top" alt="flower"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Folkanica - Ramo Primavera con Piedra</h5>
+                    <p class="card-text">S/ 89.00</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="Product.html" class="btn btn-primary"><i class="bi bi-cart cart-margin"></i>Agregar al
+                            carrito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="container container-footer ">
+        <div class="row row-footer align-items-center">
+            <div class="col-lg-2 col-sm-4 logo-div">
+                <img src="image/Clementina_logo.avif" alt="Logo" class="logo-footer">
+            </div>
+
+            <div class="col-lg-8 col-sm-4 text-center">
+                <p class="">Avenida Universitaria 1250 - San Miguel</p>
+            </div>
+            <div class="footer-icons col-lg-2 col-sm-4 justify-content-end">
+                <i class="bi bi-facebook mr-3"></i>
+                <i class="bi bi-instagram mr-3"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            var myToast = new bootstrap.Toast(document.getElementById('liveToast'));
+            myToast.show();
+        });
+    </script>
+</body>
+
+</html>
