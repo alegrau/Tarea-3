@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="py-5 text-center d-block mx-auto" >
+        <img class="py-5 text-center d-block mx-auto" src="./image/Clementina_logo.avif" alt="clementina logo" width="180px" heigh="180px">
+        <h5>Método de Pago y Envío</h5>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="mb-5">
+        <h5 class="mb-3">Direccion de Envío</h5>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Taylor" value="" required>
+                  <div class="invalid-feedback">
+                    Ingrese nombre válido.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Swift" value="" required>
+                  <div class="invalid-feedback">
+                    Ingrese apellido válido
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="taylor.swift@example.com">
+                  <div class="invalid-feedback">
+                    Ingrese dirección de correo válida.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="address" placeholder="912 North Ave. St" required>
+                  <div class="invalid-feedback">
+                    Ingresa una dirección válida.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Apartamento / Suite<span class="text-body-secondary">(Opcional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="apt 301">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">País</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Escoge...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Ingrese un país válido.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Escoge...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Ingrese un Estado válido.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Ingrese Zipcode.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Método de Pago</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Tarjeta Débito</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-body-secondary">Nombre completo como aparece en la tarjeta</small>
+                  <div class="invalid-feedback">
+                    Nombre en tarjeta es requerido
+                  </div>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Número de la tarjeta</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Número de la tarjeta es requerido
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Fecha de Expiración </label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="mm / dd / aa" required>
+                  <div class="invalid-feedback">
+                    Fecha de Expiración Requerida
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
+                  <div class="invalid-feedback">
+                    Ingrese código de seguridad
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Realizar Pago</button>
+      </form>      
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
